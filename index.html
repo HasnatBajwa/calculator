@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+
+  <body>
+    <h1>Hasnat Bajwa</h1>
+    <div id="calculator">
+      <div class="display">
+        <input type="text" id="display" placeholder="0" />
+      </div>
+      <div class="calculator">
+        <table>
+          <tr class="row">
+            <td>
+              <button id="add" class="operator" onclick="onClickHandler('+')">
+                +
+              </button>
+            </td>
+            <td>
+              <button id="subt" class="operator" onclick="onClickHandler('-')">
+                -
+              </button>
+            </td>
+            <td>
+              <button id="pro" class="operator" onclick="onClickHandler('*')">
+                x
+              </button>
+            </td>
+            <td>
+              <button id="div" class="operator" onclick="onClickHandler('/')">
+                &divide;
+              </button>
+            </td>
+          </tr>
+          <tr class="row">
+            <td><button class="but" onclick="onClickHandler(7)">7</button></td>
+            <td><button class="but" onclick="onClickHandler(8)">8</button></td>
+            <td><button class="but" onclick="onClickHandler(9)">9</button></td>
+            <td rowspan="10">
+              <button
+                class="operator"
+                style="padding: 10px; height: 200px"
+                onclick="equalsto('=')"
+              >
+                =
+              </button>
+            </td>
+          </tr>
+          <tr class="row">
+            <td><button class="but" onclick="onClickHandler(4)">4</button></td>
+            <td><button class="but" onclick="onClickHandler(5)">5</button></td>
+            <td><button class="but" onclick="onClickHandler(6)">6</button></td>
+          </tr>
+          <tr class="row">
+            <td><button class="but" onclick="onClickHandler(1)">1</button></td>
+            <td><button class="but" onclick="onClickHandler(2)">2</button></td>
+            <td><button class="but" onclick="onClickHandler(3)">3</button></td>
+          </tr>
+          <tr class="row">
+            <td><button class="but" onclick="onClickHandler(0)">0</button></td>
+            <td>
+              <button class="but" onclick="onClickHandler('.')">.</button>
+            </td>
+            <td><button class="but" onclick="clearScreen()">AC</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="contact">
+      <a href="https://www.facebook.com/i.am.hasnatbajwa" target="_blank"
+        ><img
+          src="./logos/f_logo_RGB-Black_58.png"
+          alt="facebook"
+          height="40px"
+      /></a>
+      <a href="https://www.instagram.com/hasnat.j.bajwa/" target="_blank">
+        <img
+          src="./logos/580b57fcd9996e24bc43c521.png"
+          alt="instagram"
+          height="40px"
+      /></a>
+      <a href="https://wa.me/qr/EOBM6NKBGAHNP1" target="_blank"><img src="./logos/WhatsApp-icon-PNG.png" alt="Whatsapp" height="42px"></a>
+    </div>
+
+    <div id="footer">
+      <p>Copyright &copy; 2021 Protected || All Rights Reserved</p>
+    </div>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>
